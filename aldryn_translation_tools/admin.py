@@ -130,7 +130,7 @@ class AllTranslationsMixin(object):
             )
             langs.append(link)
         return ''.join(langs)
-    all_translations.short_description = 'Translations'
+    all_translations.short_description = _('Translations')
     all_translations.allow_tags = True
 
     def get_list_display(self, request):
